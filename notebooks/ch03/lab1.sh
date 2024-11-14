@@ -1,0 +1,3 @@
+#!/bin/bash
+export HOPSWORK_API_KEY=cMbQxvfLOlU1g4pG.kw2Qm4g64D9Ngs50Eju8KYpTfU6SnRmRKbikreK9ioiBJu6rLrMdh1bWefmBt7rE
+source activate lab1scalableml
