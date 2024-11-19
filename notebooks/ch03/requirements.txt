@@ -1,5 +1,6 @@
 # Feature store and model registry
 hopsworks
+pymongo
 
 # Resolve city names from (longitude, latitude) coordinates
 geopy==2.4.1
