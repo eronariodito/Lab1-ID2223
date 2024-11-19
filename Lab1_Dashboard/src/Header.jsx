@@ -3,7 +3,7 @@ export default function Header() {
     <>
       <div className="w-screen bg-black h-min">
         <p className="text-center bg-black">
-          PM2.5 Prediction for island of Java
+          PM2.5 Prediction for Stockholm Södermalm Island
         </p>
       </div>
     </>

@@ -1,0 +1,5 @@
+Station,Street,City,Country,Latitude,Longitude,URL,csvname
+https://aqicn.org/station/@129124/,Rosenlundsgatan,Stockholm,Sweden,59.31430493,18.05700184,https://api.waqi.info/feed/A129124,roselundsgatan.csv
+https://aqicn.org/station/@78022/,Erstagatan,Stockholm,Sweden,59.31515153,18.0901034,https://api.waqi.info/feed/A78022,erstagatan.csv
+https://aqicn.org/station/@56749/,Bellmansgatan,Stockholm,Sweden,59.32099927,18.06445284,https://api.waqi.info/feed/A56749,bellmansgatan.csv
+https://aqicn.org/station/sweden/stockholm-hornsgatan-108-gata/,Hornsgatan,Stockholm,Sweden,59.31711415,18.04826249,https://api.waqi.info/feed/@10009,hornsgatan.csv
