@@ -11,7 +11,7 @@ export default defineConfig({
   },
   build: {
     rollupOptions: {
-      external: ["chart.js"], // Externalize chart.js to prevent bundling
+      external: ["chart.js", "react-chartjs-2"], // Externalize chart.js to prevent bundling
     },
   },
 });
