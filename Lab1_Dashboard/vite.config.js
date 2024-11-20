@@ -9,4 +9,7 @@ export default defineConfig({
       plugins: [tailwindcss()],
     },
   },
+  ssr: {
+    noExternal: ["chart.js/**"],
+  },
 });
