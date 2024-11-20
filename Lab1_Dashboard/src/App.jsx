@@ -9,14 +9,14 @@ import ChartHind from "./ChartHind";
 // import output_erstagatan from "./assets/output_ erstagatan.json";
 
 function App() {
-  const [location, setLocation] = useState("Erstagatan");
+  const [location, setLocation] = useState("");
   const [loading, setLoading] = useState(true);
   const [output_erstagatan, setData1] = useState(null);
   const [output_bellmansgatan, setData2] = useState(null);
   const [output_hornsgatan, setData3] = useState(null);
   const [output_rosenlundsgatan, setData4] = useState(null);
   const [output, setOutput] = useState(output_erstagatan);
-  const [calculatedResult, setCalculatedResult] = useState([]);
+  const [calculatedResult, setCalculatedResult] = useState(null);
 
   const [error, setError] = useState(null);
 
@@ -42,13 +42,29 @@ function App() {
         setOutput(output_erstagatan);
       } catch (err) {
         setError(err.message);
-      } finally {
-        setLoading(false);
       }
     };
 
     fetchData();
   }, []);
+
+  useEffect(() => {
+    if (output_erstagatan != null)
+      if (output_bellmansgatan != null)
+        if (output_hornsgatan != null)
+          if (output_rosenlundsgatan != null) {
+            setLoading(false);
+            if (output == null) {
+              setOutput(output_erstagatan);
+            }
+          }
+  }, [
+    output_erstagatan,
+    output_hornsgatan,
+    output_erstagatan,
+    output_bellmansgatan,
+    calculatedResult,
+  ]);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -132,7 +148,6 @@ function App() {
         }
         console.log(combinedArray);
         setCalculatedResult(combinedArray);
-        console.log(location);
       });
     }
   }, [location]);
@@ -189,9 +204,9 @@ function App() {
 
         <div className="w-full h-24 flex space justify-between px-72">
           <button
-            className={`my-6 bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded ${
+            className={` rounded-full my-6 hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent  ${
               location === "Erstagatan"
-                ? "bg-blue-500  border-transparent"
+                ? "bg-blue-500 text-white  border-transparent"
                 : "border-blue-500 bg-transparent text-blue-700"
             }`}
             onClick={() => handleButtonClick("Erstagatan", output_erstagatan)}
@@ -199,9 +214,9 @@ function App() {
             Erstagatan
           </button>
           <button
-            className={`my-6 bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded ${
+            className={`rounded-full my-6 hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent  ${
               location === "Hornsgatan"
-                ? "bg-blue-500 border-transparent"
+                ? "bg-blue-500 text-white border-transparent"
                 : "border-blue-500 bg-transparent text-blue-700"
             }`}
             onClick={() => handleButtonClick("Hornsgatan", output_hornsgatan)}
@@ -209,9 +224,9 @@ function App() {
             Hornsgatan
           </button>
           <button
-            className={`my-6 bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded ${
+            className={` rounded-full my-6 hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent  ${
               location === "Rosenlundsgatan"
-                ? "bg-blue-500 border-transparent"
+                ? "bg-blue-500 text-white border-transparent"
                 : "border-blue-500 bg-transparent text-blue-700"
             }`}
             onClick={() =>
@@ -221,9 +236,9 @@ function App() {
             Rosenlundsgatan
           </button>
           <button
-            className={`my-6 bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded ${
+            className={`rounded-full my-6 hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent  ${
               location === "Bellmansgatan"
-                ? "bg-blue-500 border-transparent"
+                ? "bg-blue-500 text-white border-transparent"
                 : "border-blue-500 bg-transparent text-blue-700"
             }`}
             onClick={() =>
@@ -233,28 +248,33 @@ function App() {
             Bellmansgatan
           </button>
         </div>
-        <div className="w-full grid-cols-2 grid px-8">
-          <div className="h-full px-4">
-            <div className="text-center justify-center align-middle my-6 text-2xl font-bold">
-              Prediction Chart
-            </div>
-            {output !== null && <ChartDate inputData={output.prediction_df} />}
-          </div>
-          <div className="flex flex-col h-full px-4">
-            <div className="text-center  justify-center align-middle my-6 text-2xl font-bold">
-              Hindcast Chart
-            </div>
-            <div className="grow">
-              {calculatedResult.length == 0 ? (
-                <div className="h-full justify-items-center flex justify-center align-middle text-2xl">
-                  No hindcast data
-                </div>
-              ) : (
-                <ChartHind inputData={calculatedResult} />
+        {calculatedResult !== null && (
+          <div className="w-full grid-cols-2 grid px-8">
+            <div className="h-full px-4">
+              <div className="text-center justify-center align-middle my-6 text-2xl font-bold">
+                Prediction Chart
+              </div>
+              {output !== null && (
+                <ChartDate inputData={output.prediction_df} />
               )}
             </div>
+            <div className="flex flex-col h-full px-4">
+              <div className="text-center  justify-center align-middle my-6 text-2xl font-bold">
+                Hindcast Chart
+              </div>
+              <div className="grow">
+                {calculatedResult.length == 0 ? (
+                  <div className="h-full justify-items-center flex justify-center align-middle text-2xl">
+                    No hindcast data
+                  </div>
+                ) : (
+                  <ChartHind inputData={calculatedResult} />
+                )}
+              </div>
+            </div>
           </div>
-        </div>
+        )}
+
         <Footer />
       </div>
     </>
