@@ -6,10 +6,10 @@ import Header from "./Header";
 import ChartWithRanges from "./ChartWithRanges";
 import ChartDate from "./ChartDate";
 import ChartHind from "./ChartHind";
-import output_bellmansgatan from "../public/output_ bellmansgatan.json";
-import output_hornsgatan from "../public/output_ hornsgatan.json";
-import output_rosenlundsgatan from "../public/output_ rosenlundsgatan.json";
-import output_erstagatan from "../public/output_ erstagatan.json";
+import output_bellmansgatan from "./assets/output_ bellmansgatan.json";
+import output_hornsgatan from "./assets/output_ hornsgatan.json";
+import output_rosenlundsgatan from "./assets/output_ rosenlundsgatan.json";
+import output_erstagatan from "./assets/output_ erstagatan.json";
 
 function App() {
   const [location, setLocation] = useState("Bellmansgatan");
