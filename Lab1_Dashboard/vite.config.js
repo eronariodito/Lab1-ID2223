@@ -9,7 +9,9 @@ export default defineConfig({
       plugins: [tailwindcss()],
     },
   },
-  ssr: {
-    noExternal: ["chart.js/**"],
+  build: {
+    rollupOptions: {
+      external: ["chart.js"], // Externalize chart.js to prevent bundling
+    },
   },
 });

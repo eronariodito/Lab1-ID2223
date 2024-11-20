@@ -8,8 +8,11 @@ export default function Footer() {
         </div>
 
         <div className="flex justify-center text-lg">
-          <p>by Eron Ariodito (ariodito@kth.se) and</p>
-          <p>Pierre Grégoire Malo Jousselin (pgmjo@kth.se)</p>
+          <p>
+            by Eron Ariodito (ariodito@kth.se) and Pierre Grégoire Malo
+            Jousselin (pgmjo@kth.se)
+          </p>
+          <p></p>
         </div>
       </div>
     </>
