@@ -3,15 +3,22 @@ import Footer from "./Footer";
 import Header from "./Header";
 import ChartDate from "./ChartDate";
 import ChartHind from "./ChartHind";
-import output_bellmansgatan from "./assets/output_ bellmansgatan.json";
-import output_hornsgatan from "./assets/output_ hornsgatan.json";
-import output_rosenlundsgatan from "./assets/output_ rosenlundsgatan.json";
-import output_erstagatan from "./assets/output_ erstagatan.json";
+// import output_bellmansgatan from "./assets/output_ bellmansgatan.json";
+// import output_hornsgatan from "./assets/output_ hornsgatan.json";
+// import output_rosenlundsgatan from "./assets/output_ rosenlundsgatan.json";
+// import output_erstagatan from "./assets/output_ erstagatan.json";
 
 function App() {
-  const [location, setLocation] = useState("Bellmansgatan");
-  const [output, setOutput] = useState(output_bellmansgatan);
+  const [location, setLocation] = useState("Erstagatan");
+  const [loading, setLoading] = useState(true);
+  const [output_erstagatan, setData1] = useState(null);
+  const [output_bellmansgatan, setData2] = useState(null);
+  const [output_hornsgatan, setData3] = useState(null);
+  const [output_rosenlundsgatan, setData4] = useState(null);
+  const [output, setOutput] = useState(output_erstagatan);
   const [calculatedResult, setCalculatedResult] = useState([]);
+
+  const [error, setError] = useState(null);
 
   const handleButtonClick = (value1, value2) => {
     setLocation(value1); // Update state based on button clicked
@@ -19,29 +26,132 @@ function App() {
   };
 
   useEffect(() => {
-    const combinedArray = [];
-    output.aq_today_df.forEach((item1) => {
-      // Find the matching item from array2
-      const matchingItem = output.prediction_df.find(
-        (item2) => item2.date === item1.date
-      );
-      console.log("BAPAKLO");
+    const fetchData = async () => {
+      try {
+        const response = await fetch(
+          "https://raw.githubusercontent.com/eronariodito/Lab1-ID2223/refs/heads/main/Lab1_Dashboard/public/output_%20erstagatan.json"
+        );
 
-      // If a match is found, combine the values
-      if (matchingItem) {
-        combinedArray.push({
-          date: item1.date,
-          pm25: item1.pm25,
-          predicted: matchingItem.predicted_pm25,
-        });
+        if (!response.ok) {
+          throw new Error(`HTTP error! status: ${response.status}`);
+        }
+
+        const result = await response.json(); // Parse JSON response
+        setData1(result);
+        setLocation(Erstagatan);
+        setOutput(output_erstagatan);
+      } catch (err) {
+        setError(err.message);
+      } finally {
+        setLoading(false);
       }
-      console.log(combinedArray);
-      setCalculatedResult(combinedArray);
-      console.log(location);
-    });
+    };
+
+    fetchData();
+  }, []);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await fetch(
+          "https://raw.githubusercontent.com/eronariodito/Lab1-ID2223/refs/heads/main/Lab1_Dashboard/public/output_%20bellmansgatan.json"
+        );
+
+        if (!response.ok) {
+          throw new Error(`HTTP error! status: ${response.status}`);
+        }
+
+        const result = await response.json(); // Parse JSON response
+        setData2(result);
+      } catch (err) {
+        setError(err.message);
+      }
+    };
+
+    fetchData();
+  }, []);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await fetch(
+          "https://raw.githubusercontent.com/eronariodito/Lab1-ID2223/refs/heads/main/Lab1_Dashboard/public/output_%20hornsgatan.json"
+        );
+
+        if (!response.ok) {
+          throw new Error(`HTTP error! status: ${response.status}`);
+        }
+
+        const result = await response.json(); // Parse JSON response
+        setData3(result);
+      } catch (err) {
+        setError(err.message);
+      }
+    };
+
+    fetchData();
+  }, []);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await fetch(
+          "https://raw.githubusercontent.com/eronariodito/Lab1-ID2223/refs/heads/main/Lab1_Dashboard/public/output_%20rosenlundsgatan.json"
+        );
+
+        if (!response.ok) {
+          throw new Error(`HTTP error! status: ${response.status}`);
+        }
+
+        const result = await response.json(); // Parse JSON response
+        setData4(result);
+      } catch (err) {
+        setError(err.message);
+      }
+    };
+
+    fetchData();
+  }, []);
+
+  useEffect(() => {
+    if (output != null) {
+      const combinedArray = [];
+      output.aq_today_df.forEach((item1) => {
+        // Find the matching item from array2
+        const matchingItem = output.prediction_df.find(
+          (item2) => item2.date === item1.date
+        );
+
+        // If a match is found, combine the values
+        if (matchingItem) {
+          combinedArray.push({
+            date: item1.date,
+            pm25: item1.pm25,
+            predicted: matchingItem.predicted_pm25,
+          });
+        }
+        console.log(combinedArray);
+        setCalculatedResult(combinedArray);
+        console.log(location);
+      });
+    }
   }, [location]);
 
   // console.log(combinedArray);
+  if (loading) {
+    return (
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          height: "100vh",
+        }}
+      >
+        <p>Loading...</p>
+      </div>
+    );
+  }
 
   return (
     <>
@@ -81,7 +191,7 @@ function App() {
           <button
             className={`my-6 bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded ${
               location === "Erstagatan"
-                ? "bg-blue-500 text-white border-transparent"
+                ? "bg-blue-500  border-transparent"
                 : "border-blue-500 bg-transparent text-blue-700"
             }`}
             onClick={() => handleButtonClick("Erstagatan", output_erstagatan)}
@@ -91,7 +201,7 @@ function App() {
           <button
             className={`my-6 bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded ${
               location === "Hornsgatan"
-                ? "bg-blue-500 text-white border-transparent"
+                ? "bg-blue-500 border-transparent"
                 : "border-blue-500 bg-transparent text-blue-700"
             }`}
             onClick={() => handleButtonClick("Hornsgatan", output_hornsgatan)}
@@ -101,7 +211,7 @@ function App() {
           <button
             className={`my-6 bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded ${
               location === "Rosenlundsgatan"
-                ? "bg-blue-500 text-white border-transparent"
+                ? "bg-blue-500 border-transparent"
                 : "border-blue-500 bg-transparent text-blue-700"
             }`}
             onClick={() =>
@@ -113,7 +223,7 @@ function App() {
           <button
             className={`my-6 bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded ${
               location === "Bellmansgatan"
-                ? "bg-blue-500 text-white border-transparent"
+                ? "bg-blue-500 border-transparent"
                 : "border-blue-500 bg-transparent text-blue-700"
             }`}
             onClick={() =>
@@ -128,7 +238,7 @@ function App() {
             <div className="text-center justify-center align-middle my-6 text-2xl font-bold">
               Prediction Chart
             </div>
-            <ChartDate inputData={output.prediction_df} />
+            {output !== null && <ChartDate inputData={output.prediction_df} />}
           </div>
           <div className="flex flex-col h-full px-4">
             <div className="text-center  justify-center align-middle my-6 text-2xl font-bold">
