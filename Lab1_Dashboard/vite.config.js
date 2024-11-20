@@ -11,7 +11,12 @@ export default defineConfig({
   },
   build: {
     rollupOptions: {
-      external: ["chart.js", "react-chartjs-2", "chartjs-adapter-date-fns"], // Externalize chart.js to prevent bundling
+      external: [
+        "chart.js",
+        "react-chartjs-2",
+        "chartjs-adapter-date-fns",
+        "date-fns",
+      ], // Externalize chart.js to prevent bundling
     },
   },
 });
