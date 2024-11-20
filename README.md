@@ -1,5 +1,8 @@
 # Air Quality Prediction for Södermalm Island, Stockholm, Sweden - Lab Description
 
+Eron Ariodito Hermanto (ariodito@kth.se)
+Pierre Grégoire Malo Jousselin (pgmjo@kth.se)
+
 This project is part of **Lab 1** for the course **ID2223 - HT2024**. The goal is to build a serverless AI system that predicts air quality levels (PM2.5) in Södermalm Island, Stockholm, Sweden using historical and forecasted weather data. The system includes data pipelines, a machine learning model, and a Dashboard for visualization. 4 (active) sensors is used troughout the island of Södermalm for this project.
 
 ## Project Overview
