@@ -9,6 +9,11 @@ export default defineConfig({
       plugins: [tailwindcss()],
     },
   },
+  server: {
+    fs: {
+      cachedChecks: false,
+    },
+  },
   // build: {
   //   rollupOptions: {
   //     external: [
