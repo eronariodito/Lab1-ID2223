@@ -9,14 +9,14 @@ export default defineConfig({
       plugins: [tailwindcss()],
     },
   },
-  build: {
-    rollupOptions: {
-      external: [
-        "chart.js",
-        "react-chartjs-2",
-        "chartjs-adapter-date-fns",
-        "date-fns",
-      ], // Externalize chart.js to prevent bundling
-    },
-  },
+  // build: {
+  //   rollupOptions: {
+  //     external: [
+  //       "chart.js",
+  //       "react-chartjs-2",
+  //       "chartjs-adapter-date-fns",
+  //       "date-fns",
+  //     ], // Externalize chart.js to prevent bundling
+  //   },
+  // },
 });
