@@ -29,14 +29,6 @@
             "country": "Sweden",
             "city": "Stockholm",
             "street": "Erstagatan",
-            "date": "2024-11-20 00:00:00",
-            "url": "https://api.waqi.info/feed/A78022"
-        },
-        {
-            "pm25": 5.0,
-            "country": "Sweden",
-            "city": "Stockholm",
-            "street": "Erstagatan",
             "date": 5.0,
             "url": "https://api.waqi.info/feed/A78022"
         },
