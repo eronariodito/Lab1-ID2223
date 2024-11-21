@@ -28,13 +28,20 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      - name: execute python workflows from bash script
+      - name: execute python upload
         env:
-          HOPSWORKS_API_KEY: ${{ secrets.HOPSWORKS_API_KEY }}
+          GITHUB_WORKSPACE: ${{ github.workspace }}
         run: |
           cd notebooks/ch03
-          jupyter nbconvert --to notebook --execute 2_air_quality_feature_pipeline.ipynb
-          jupyter nbconvert --to notebook --execute 4_air_quality_batch_inference.ipynb
+          jupyter nbconvert --to notebook --execute upload.ipynb
+
+      # - name: execute python workflows from bash script
+      #   env:
+      #     HOPSWORKS_API_KEY: ${{ secrets.HOPSWORKS_API_KEY }}
+      #   run: |
+      #     cd notebooks/ch03
+      #     jupyter nbconvert --to notebook --execute 2_air_quality_feature_pipeline.ipynb
+      #     jupyter nbconvert --to notebook --execute 4_air_quality_batch_inference.ipynb
 
       # - name: github pages publish
       #   uses: stefanzweifel/git-auto-commit-action@v5
