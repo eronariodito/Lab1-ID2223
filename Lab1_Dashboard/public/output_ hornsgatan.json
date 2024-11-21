@@ -29,14 +29,6 @@
             "country": "Sweden",
             "city": "Stockholm",
             "street": "Hornsgatan",
-            "date": "2024-11-20 00:00:00",
-            "url": "https://api.waqi.info/feed/@10009"
-        },
-        {
-            "pm25": 31.0,
-            "country": "Sweden",
-            "city": "Stockholm",
-            "street": "Hornsgatan",
             "date": 31.0,
             "url": "https://api.waqi.info/feed/@10009"
         },
