@@ -29,14 +29,6 @@
             "country": "Sweden",
             "city": "Stockholm",
             "street": "Bellmansgatan",
-            "date": "2024-11-20 00:00:00",
-            "url": "https://api.waqi.info/feed/A56749"
-        },
-        {
-            "pm25": 3.0,
-            "country": "Sweden",
-            "city": "Stockholm",
-            "street": "Bellmansgatan",
             "date": 3.0,
             "url": "https://api.waqi.info/feed/A56749"
         },
