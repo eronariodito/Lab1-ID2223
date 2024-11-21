@@ -29,14 +29,6 @@
             "country": "Sweden",
             "city": "Stockholm",
             "street": "Rosenlundsgatan",
-            "date": "2024-11-20 00:00:00",
-            "url": "https://api.waqi.info/feed/A129124"
-        },
-        {
-            "pm25": 0.0,
-            "country": "Sweden",
-            "city": "Stockholm",
-            "street": "Rosenlundsgatan",
             "date": 0.0,
             "url": "https://api.waqi.info/feed/A129124"
         },
