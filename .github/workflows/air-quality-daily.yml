@@ -30,7 +30,7 @@ jobs:
 
       - name: execute python upload
         env:
-          GITHUB_WORKSPACE: ${{ github.workspace }}
+          TOKEN_GITHUB: ${{ secrets.TOKEN_GITHUB }}
         run: |
           cd notebooks/ch03
           jupyter nbconvert --to notebook --execute upload.ipynb
