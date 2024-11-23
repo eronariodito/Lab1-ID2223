@@ -9,6 +9,22 @@
     "csv_files": "../../data/csv_backfill/hornsgatan.csv",
     "aq_today_df": [
         {
+            "pm25": 7.0,
+            "country": "Sweden",
+            "city": "Stockholm",
+            "street": "Hornsgatan",
+            "date": "2024-11-23 00:00:00",
+            "url": "https://api.waqi.info/feed/@10009"
+        },
+        {
+            "pm25": 8.0,
+            "country": "Sweden",
+            "city": "Stockholm",
+            "street": "Hornsgatan",
+            "date": "2024-11-22 00:00:00",
+            "url": "https://api.waqi.info/feed/@10009"
+        },
+        {
             "pm25": 31.0,
             "country": "Sweden",
             "city": "Stockholm",
@@ -41109,7 +41125,7 @@
             "wind_speed_10m_max": 15.141413688659668,
             "wind_direction_10m_dominant": 161.99574279785156,
             "city": "Stockholm",
-            "predicted_pm25": 46.95526123046875,
+            "predicted_pm25": 57.78270721435547,
             "street": "Hornsgatan",
             "country": "Sweden",
             "days_before_forecast_day": 1
@@ -41121,7 +41137,7 @@
             "wind_speed_10m_max": 15.807238578796387,
             "wind_direction_10m_dominant": 210.06849670410156,
             "city": "Stockholm",
-            "predicted_pm25": 40.30148696899414,
+            "predicted_pm25": 20.910511016845703,
             "street": "Hornsgatan",
             "country": "Sweden",
             "days_before_forecast_day": 3
@@ -41133,7 +41149,7 @@
             "wind_speed_10m_max": 22.183128356933594,
             "wind_direction_10m_dominant": 221.71066284179688,
             "city": "Stockholm",
-            "predicted_pm25": 34.0720100402832,
+            "predicted_pm25": 32.01676940917969,
             "street": "Hornsgatan",
             "country": "Sweden",
             "days_before_forecast_day": 4
@@ -41145,7 +41161,7 @@
             "wind_speed_10m_max": 9.65981388092041,
             "wind_direction_10m_dominant": 296.5649719238281,
             "city": "Stockholm",
-            "predicted_pm25": 50.802978515625,
+            "predicted_pm25": 36.901947021484375,
             "street": "Hornsgatan",
             "country": "Sweden",
             "days_before_forecast_day": 9
@@ -41157,18 +41173,26 @@
             "wind_speed_10m_max": 16.19999885559082,
             "wind_direction_10m_dominant": 233.13002014160156,
             "city": "Stockholm",
-            "predicted_pm25": 31.125444412231445,
+            "predicted_pm25": 32.953285217285156,
             "street": "Hornsgatan",
             "country": "Sweden",
             "days_before_forecast_day": 8
         },
         {
             "date": "2024-11-29 00:00:00",
-            "predicted_pm25": 23.15689468383789
+            "predicted_pm25": 34.216949462890625
         },
         {
             "date": "2024-11-30 00:00:00",
-            "predicted_pm25": 18.553491592407227
+            "predicted_pm25": 25.81818199157715
+        },
+        {
+            "date": "2024-12-01 00:00:00",
+            "predicted_pm25": 23.726369857788086
+        },
+        {
+            "date": "2024-12-02 00:00:00",
+            "predicted_pm25": 26.879735946655273
         }
     ]
 }
