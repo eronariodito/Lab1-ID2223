@@ -9,6 +9,22 @@
     "csv_files": "../../data/csv_backfill/erstagatan.csv",
     "aq_today_df": [
         {
+            "pm25": 3.0,
+            "country": "Sweden",
+            "city": "Stockholm",
+            "street": "Erstagatan",
+            "date": "2024-11-23 00:00:00",
+            "url": "https://api.waqi.info/feed/A78022"
+        },
+        {
+            "pm25": 5.0,
+            "country": "Sweden",
+            "city": "Stockholm",
+            "street": "Erstagatan",
+            "date": "2024-11-22 00:00:00",
+            "url": "https://api.waqi.info/feed/A78022"
+        },
+        {
             "pm25": 2.0,
             "country": "Sweden",
             "city": "Stockholm",
@@ -35085,7 +35101,7 @@
             "wind_speed_10m_max": 15.141413688659668,
             "wind_direction_10m_dominant": 161.99574279785156,
             "city": "Stockholm",
-            "predicted_pm25": 5.514052391052246,
+            "predicted_pm25": 15.59465503692627,
             "street": "Erstagatan",
             "country": "Sweden",
             "days_before_forecast_day": 1
@@ -35097,7 +35113,7 @@
             "wind_speed_10m_max": 15.807238578796387,
             "wind_direction_10m_dominant": 210.06849670410156,
             "city": "Stockholm",
-            "predicted_pm25": 7.772442817687988,
+            "predicted_pm25": 4.168386459350586,
             "street": "Erstagatan",
             "country": "Sweden",
             "days_before_forecast_day": 3
@@ -35109,7 +35125,7 @@
             "wind_speed_10m_max": 22.183128356933594,
             "wind_direction_10m_dominant": 221.71066284179688,
             "city": "Stockholm",
-            "predicted_pm25": 3.3192310333251953,
+            "predicted_pm25": 5.596155166625977,
             "street": "Erstagatan",
             "country": "Sweden",
             "days_before_forecast_day": 4
@@ -35121,7 +35137,7 @@
             "wind_speed_10m_max": 9.65981388092041,
             "wind_direction_10m_dominant": 296.5649719238281,
             "city": "Stockholm",
-            "predicted_pm25": 0.8330075740814209,
+            "predicted_pm25": 1.765815258026123,
             "street": "Erstagatan",
             "country": "Sweden",
             "days_before_forecast_day": 9
@@ -35133,18 +35149,26 @@
             "wind_speed_10m_max": 16.19999885559082,
             "wind_direction_10m_dominant": 233.13002014160156,
             "city": "Stockholm",
-            "predicted_pm25": 4.149813175201416,
+            "predicted_pm25": 2.4758338928222656,
             "street": "Erstagatan",
             "country": "Sweden",
             "days_before_forecast_day": 8
         },
         {
             "date": "2024-11-29 00:00:00",
-            "predicted_pm25": 3.837242364883423
+            "predicted_pm25": 3.6421382427215576
         },
         {
             "date": "2024-11-30 00:00:00",
-            "predicted_pm25": 2.897885799407959
+            "predicted_pm25": 2.7285144329071045
+        },
+        {
+            "date": "2024-12-01 00:00:00",
+            "predicted_pm25": 0.721994161605835
+        },
+        {
+            "date": "2024-12-02 00:00:00",
+            "predicted_pm25": 2.341278076171875
         }
     ]
 }
