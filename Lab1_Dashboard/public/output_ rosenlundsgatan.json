@@ -13,6 +13,22 @@
             "country": "Sweden",
             "city": "Stockholm",
             "street": "Rosenlundsgatan",
+            "date": "2024-11-23 00:00:00",
+            "url": "https://api.waqi.info/feed/A129124"
+        },
+        {
+            "pm25": 0.0,
+            "country": "Sweden",
+            "city": "Stockholm",
+            "street": "Rosenlundsgatan",
+            "date": "2024-11-22 00:00:00",
+            "url": "https://api.waqi.info/feed/A129124"
+        },
+        {
+            "pm25": 0.0,
+            "country": "Sweden",
+            "city": "Stockholm",
+            "street": "Rosenlundsgatan",
             "date": "2024-11-21 00:00:00",
             "url": "https://api.waqi.info/feed/A129124"
         },
@@ -33604,31 +33620,39 @@
         },
         {
             "date": "2024-11-24 00:00:00",
-            "predicted_pm25": 2.0231449604034424
+            "predicted_pm25": 7.732898235321045
         },
         {
             "date": "2024-11-25 00:00:00",
-            "predicted_pm25": 7.197606086730957
+            "predicted_pm25": 0.0
         },
         {
             "date": "2024-11-26 00:00:00",
-            "predicted_pm25": 1.5267430543899536
+            "predicted_pm25": 4.418663024902344
         },
         {
             "date": "2024-11-27 00:00:00",
-            "predicted_pm25": 0.09217686206102371
+            "predicted_pm25": 0.0
         },
         {
             "date": "2024-11-28 00:00:00",
-            "predicted_pm25": 1.8057564496994019
+            "predicted_pm25": 0.5394755601882935
         },
         {
             "date": "2024-11-29 00:00:00",
-            "predicted_pm25": 0.2717171311378479
+            "predicted_pm25": 0.6046754717826843
         },
         {
             "date": "2024-11-30 00:00:00",
-            "predicted_pm25": 0.6139042973518372
+            "predicted_pm25": 1.4147065877914429
+        },
+        {
+            "date": "2024-12-01 00:00:00",
+            "predicted_pm25": 0.8628658652305603
+        },
+        {
+            "date": "2024-12-02 00:00:00",
+            "predicted_pm25": 1.7052783966064453
         }
     ]
 }
