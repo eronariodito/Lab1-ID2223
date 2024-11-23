@@ -9,6 +9,22 @@
     "csv_files": "../../data/csv_backfill/bellmansgatan.csv",
     "aq_today_df": [
         {
+            "pm25": 3.0,
+            "country": "Sweden",
+            "city": "Stockholm",
+            "street": "Bellmansgatan",
+            "date": "2024-11-23 00:00:00",
+            "url": "https://api.waqi.info/feed/A56749"
+        },
+        {
+            "pm25": 6.0,
+            "country": "Sweden",
+            "city": "Stockholm",
+            "street": "Bellmansgatan",
+            "date": "2024-11-22 00:00:00",
+            "url": "https://api.waqi.info/feed/A56749"
+        },
+        {
             "pm25": 4.0,
             "country": "Sweden",
             "city": "Stockholm",
@@ -34989,7 +35005,7 @@
             "wind_speed_10m_max": 15.141413688659668,
             "wind_direction_10m_dominant": 161.99574279785156,
             "city": "Stockholm",
-            "predicted_pm25": 6.0420966148376465,
+            "predicted_pm25": 15.412463188171387,
             "street": "Bellmansgatan",
             "country": "Sweden",
             "days_before_forecast_day": 1
@@ -35001,7 +35017,7 @@
             "wind_speed_10m_max": 15.807238578796387,
             "wind_direction_10m_dominant": 210.06849670410156,
             "city": "Stockholm",
-            "predicted_pm25": 2.135175943374634,
+            "predicted_pm25": 1.7766920328140259,
             "street": "Bellmansgatan",
             "country": "Sweden",
             "days_before_forecast_day": 3
@@ -35013,7 +35029,7 @@
             "wind_speed_10m_max": 22.183128356933594,
             "wind_direction_10m_dominant": 221.71066284179688,
             "city": "Stockholm",
-            "predicted_pm25": 4.882810115814209,
+            "predicted_pm25": 6.398448944091797,
             "street": "Bellmansgatan",
             "country": "Sweden",
             "days_before_forecast_day": 4
@@ -35025,7 +35041,7 @@
             "wind_speed_10m_max": 9.65981388092041,
             "wind_direction_10m_dominant": 296.5649719238281,
             "city": "Stockholm",
-            "predicted_pm25": 0.0,
+            "predicted_pm25": 1.5032577514648438,
             "street": "Bellmansgatan",
             "country": "Sweden",
             "days_before_forecast_day": 9
@@ -35037,18 +35053,26 @@
             "wind_speed_10m_max": 16.19999885559082,
             "wind_direction_10m_dominant": 233.13002014160156,
             "city": "Stockholm",
-            "predicted_pm25": 3.3893539905548096,
+            "predicted_pm25": 1.377984642982483,
             "street": "Bellmansgatan",
             "country": "Sweden",
             "days_before_forecast_day": 8
         },
         {
             "date": "2024-11-29 00:00:00",
-            "predicted_pm25": 4.331048011779785
+            "predicted_pm25": 3.995023488998413
         },
         {
             "date": "2024-11-30 00:00:00",
-            "predicted_pm25": 2.121875762939453
+            "predicted_pm25": 3.014983654022217
+        },
+        {
+            "date": "2024-12-01 00:00:00",
+            "predicted_pm25": 1.5584200620651245
+        },
+        {
+            "date": "2024-12-02 00:00:00",
+            "predicted_pm25": 1.7417211532592773
         }
     ]
 }
