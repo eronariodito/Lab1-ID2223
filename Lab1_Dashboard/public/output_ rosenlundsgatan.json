@@ -13,6 +13,14 @@
             "country": "Sweden",
             "city": "Stockholm",
             "street": "Rosenlundsgatan",
+            "date": "2024-11-24 00:00:00",
+            "url": "https://api.waqi.info/feed/A129124"
+        },
+        {
+            "pm25": 0.0,
+            "country": "Sweden",
+            "city": "Stockholm",
+            "street": "Rosenlundsgatan",
             "date": "2024-11-23 00:00:00",
             "url": "https://api.waqi.info/feed/A129124"
         },
@@ -33624,35 +33632,39 @@
         },
         {
             "date": "2024-11-25 00:00:00",
-            "predicted_pm25": 0.0
+            "predicted_pm25": 0.5574789643287659
         },
         {
             "date": "2024-11-26 00:00:00",
-            "predicted_pm25": 4.418663024902344
+            "predicted_pm25": 0.8612918853759766
         },
         {
             "date": "2024-11-27 00:00:00",
-            "predicted_pm25": 0.0
+            "predicted_pm25": 0.23832429945468903
         },
         {
             "date": "2024-11-28 00:00:00",
-            "predicted_pm25": 0.5394755601882935
+            "predicted_pm25": 0.7328181266784668
         },
         {
             "date": "2024-11-29 00:00:00",
-            "predicted_pm25": 0.6046754717826843
+            "predicted_pm25": 1.3953630924224854
         },
         {
             "date": "2024-11-30 00:00:00",
-            "predicted_pm25": 1.4147065877914429
+            "predicted_pm25": 0.4750264585018158
         },
         {
             "date": "2024-12-01 00:00:00",
-            "predicted_pm25": 0.8628658652305603
+            "predicted_pm25": 2.4242279529571533
         },
         {
             "date": "2024-12-02 00:00:00",
-            "predicted_pm25": 1.7052783966064453
+            "predicted_pm25": 3.633798122406006
+        },
+        {
+            "date": "2024-12-03 00:00:00",
+            "predicted_pm25": 1.4540996551513672
         }
     ]
 }
