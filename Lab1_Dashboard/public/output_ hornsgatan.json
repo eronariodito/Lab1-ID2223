@@ -9,6 +9,14 @@
     "csv_files": "../../data/csv_backfill/hornsgatan.csv",
     "aq_today_df": [
         {
+            "pm25": 14.0,
+            "country": "Sweden",
+            "city": "Stockholm",
+            "street": "Hornsgatan",
+            "date": "2024-11-24 00:00:00",
+            "url": "https://api.waqi.info/feed/@10009"
+        },
+        {
             "pm25": 7.0,
             "country": "Sweden",
             "city": "Stockholm",
@@ -41137,7 +41145,7 @@
             "wind_speed_10m_max": 15.807238578796387,
             "wind_direction_10m_dominant": 210.06849670410156,
             "city": "Stockholm",
-            "predicted_pm25": 20.910511016845703,
+            "predicted_pm25": 27.546972274780273,
             "street": "Hornsgatan",
             "country": "Sweden",
             "days_before_forecast_day": 3
@@ -41149,7 +41157,7 @@
             "wind_speed_10m_max": 22.183128356933594,
             "wind_direction_10m_dominant": 221.71066284179688,
             "city": "Stockholm",
-            "predicted_pm25": 32.01676940917969,
+            "predicted_pm25": 34.42227554321289,
             "street": "Hornsgatan",
             "country": "Sweden",
             "days_before_forecast_day": 4
@@ -41161,7 +41169,7 @@
             "wind_speed_10m_max": 9.65981388092041,
             "wind_direction_10m_dominant": 296.5649719238281,
             "city": "Stockholm",
-            "predicted_pm25": 36.901947021484375,
+            "predicted_pm25": 49.93712615966797,
             "street": "Hornsgatan",
             "country": "Sweden",
             "days_before_forecast_day": 9
@@ -41173,26 +41181,30 @@
             "wind_speed_10m_max": 16.19999885559082,
             "wind_direction_10m_dominant": 233.13002014160156,
             "city": "Stockholm",
-            "predicted_pm25": 32.953285217285156,
+            "predicted_pm25": 32.54907989501953,
             "street": "Hornsgatan",
             "country": "Sweden",
             "days_before_forecast_day": 8
         },
         {
             "date": "2024-11-29 00:00:00",
-            "predicted_pm25": 34.216949462890625
+            "predicted_pm25": 46.58148193359375
         },
         {
             "date": "2024-11-30 00:00:00",
-            "predicted_pm25": 25.81818199157715
+            "predicted_pm25": 19.409502029418945
         },
         {
             "date": "2024-12-01 00:00:00",
-            "predicted_pm25": 23.726369857788086
+            "predicted_pm25": 41.052513122558594
         },
         {
             "date": "2024-12-02 00:00:00",
-            "predicted_pm25": 26.879735946655273
+            "predicted_pm25": 37.848060607910156
+        },
+        {
+            "date": "2024-12-03 00:00:00",
+            "predicted_pm25": 22.2305850982666
         }
     ]
 }
