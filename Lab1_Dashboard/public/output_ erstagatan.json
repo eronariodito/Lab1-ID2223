@@ -9,6 +9,14 @@
     "csv_files": "../../data/csv_backfill/erstagatan.csv",
     "aq_today_df": [
         {
+            "pm25": 9.0,
+            "country": "Sweden",
+            "city": "Stockholm",
+            "street": "Erstagatan",
+            "date": "2024-11-25 00:00:00",
+            "url": "https://api.waqi.info/feed/A78022"
+        },
+        {
             "pm25": 12.0,
             "country": "Sweden",
             "city": "Stockholm",
@@ -35133,7 +35141,7 @@
             "wind_speed_10m_max": 22.183128356933594,
             "wind_direction_10m_dominant": 221.71066284179688,
             "city": "Stockholm",
-            "predicted_pm25": 3.8631768226623535,
+            "predicted_pm25": 4.7843780517578125,
             "street": "Erstagatan",
             "country": "Sweden",
             "days_before_forecast_day": 4
@@ -35145,7 +35153,7 @@
             "wind_speed_10m_max": 9.65981388092041,
             "wind_direction_10m_dominant": 296.5649719238281,
             "city": "Stockholm",
-            "predicted_pm25": 8.192381858825684,
+            "predicted_pm25": 2.492999792098999,
             "street": "Erstagatan",
             "country": "Sweden",
             "days_before_forecast_day": 9
@@ -35157,30 +35165,34 @@
             "wind_speed_10m_max": 16.19999885559082,
             "wind_direction_10m_dominant": 233.13002014160156,
             "city": "Stockholm",
-            "predicted_pm25": 2.4185914993286133,
+            "predicted_pm25": 3.873241901397705,
             "street": "Erstagatan",
             "country": "Sweden",
             "days_before_forecast_day": 8
         },
         {
             "date": "2024-11-29 00:00:00",
-            "predicted_pm25": 6.856579780578613
+            "predicted_pm25": 3.854266881942749
         },
         {
             "date": "2024-11-30 00:00:00",
-            "predicted_pm25": 2.4333529472351074
+            "predicted_pm25": 2.5190463066101074
         },
         {
             "date": "2024-12-01 00:00:00",
-            "predicted_pm25": 5.420405864715576
+            "predicted_pm25": 2.2225680351257324
         },
         {
             "date": "2024-12-02 00:00:00",
-            "predicted_pm25": 4.743123531341553
+            "predicted_pm25": 3.6657536029815674
         },
         {
             "date": "2024-12-03 00:00:00",
-            "predicted_pm25": 3.749499797821045
+            "predicted_pm25": 3.717456102371216
+        },
+        {
+            "date": "2024-12-04 00:00:00",
+            "predicted_pm25": 5.291886329650879
         }
     ]
 }
