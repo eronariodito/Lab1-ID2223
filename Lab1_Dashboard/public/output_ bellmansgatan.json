@@ -9,6 +9,14 @@
     "csv_files": "../../data/csv_backfill/bellmansgatan.csv",
     "aq_today_df": [
         {
+            "pm25": 15.0,
+            "country": "Sweden",
+            "city": "Stockholm",
+            "street": "Bellmansgatan",
+            "date": "2024-11-25 00:00:00",
+            "url": "https://api.waqi.info/feed/A56749"
+        },
+        {
             "pm25": 9.0,
             "country": "Sweden",
             "city": "Stockholm",
@@ -35037,7 +35045,7 @@
             "wind_speed_10m_max": 22.183128356933594,
             "wind_direction_10m_dominant": 221.71066284179688,
             "city": "Stockholm",
-            "predicted_pm25": 4.185699939727783,
+            "predicted_pm25": 4.145709037780762,
             "street": "Bellmansgatan",
             "country": "Sweden",
             "days_before_forecast_day": 4
@@ -35049,7 +35057,7 @@
             "wind_speed_10m_max": 9.65981388092041,
             "wind_direction_10m_dominant": 296.5649719238281,
             "city": "Stockholm",
-            "predicted_pm25": 8.313237190246582,
+            "predicted_pm25": 2.373126745223999,
             "street": "Bellmansgatan",
             "country": "Sweden",
             "days_before_forecast_day": 9
@@ -35061,30 +35069,34 @@
             "wind_speed_10m_max": 16.19999885559082,
             "wind_direction_10m_dominant": 233.13002014160156,
             "city": "Stockholm",
-            "predicted_pm25": 2.3602964878082275,
+            "predicted_pm25": 4.065789699554443,
             "street": "Bellmansgatan",
             "country": "Sweden",
             "days_before_forecast_day": 8
         },
         {
             "date": "2024-11-29 00:00:00",
-            "predicted_pm25": 5.214333534240723
+            "predicted_pm25": 5.1568217277526855
         },
         {
             "date": "2024-11-30 00:00:00",
-            "predicted_pm25": 4.078531265258789
+            "predicted_pm25": 2.638742208480835
         },
         {
             "date": "2024-12-01 00:00:00",
-            "predicted_pm25": 2.6523544788360596
+            "predicted_pm25": 3.380847692489624
         },
         {
             "date": "2024-12-02 00:00:00",
-            "predicted_pm25": 4.444812774658203
+            "predicted_pm25": 3.9608676433563232
         },
         {
             "date": "2024-12-03 00:00:00",
-            "predicted_pm25": 3.5778591632843018
+            "predicted_pm25": 4.794231414794922
+        },
+        {
+            "date": "2024-12-04 00:00:00",
+            "predicted_pm25": 3.5396060943603516
         }
     ]
 }
